@@ -1,0 +1,17 @@
+version: "3.4"  # Add space after the colon
+
+services:
+  postgres:
+    container_name: threads_db  # Change hyphen to underscore
+    image: postgres
+    ports:
+      - 5432:5432
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: postgres  # Remove space after the colon
+      POSTGRES_DB: threads
+      POSTGRES_PASSWORD: threads
+
+volumes:
+  postgres_data:
