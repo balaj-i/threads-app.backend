@@ -1,0 +1,25 @@
+{
+  "name": "threads-app.backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index",
+  "types": "src/index",
+  "scripts": {
+    "start": "node build/index.js",
+    "dev": "tsc-watch --onSuccess \"npm start\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.11.0",
+    "express": "^4.21.1",
+    "express.js": "^1.0.0",
+    "graphql": "^16.9.0",
+    "tsc-watch": "^6.2.0",
+    "typescript": "^5.6.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.7.7"
+  }
+}
